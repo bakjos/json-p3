@@ -14,6 +14,12 @@ export {
   JSONPathSyntaxError,
   JSONPathTypeError,
   JSONPathRecursionLimitError,
+  JSONPathSegment,
+  UndefinedFilterFunctionError,
+  ChildSegment,
+  DescendantSegment,
+  Parser,
+  TokenStream,
   Token,
   TokenKind,
   Nothing,
@@ -21,6 +27,24 @@ export {
   query,
   compile,
 } from "./path";
+
+export {
+  FilterSelector,
+  IndexSelector,
+  JSONPathSelector,
+  NameSelector,
+  SliceSelector,
+  WildcardSelector,
+} from "./path/selectors";
+export {
+  KeySelector,
+  KeysSelector,
+  KeysFilterSelector,
+} from "./path/extra/selectors";
+
+export * as expression from "./path/expression";
+export { CurrentKey } from "./path/extra/expression";
+
 export type { JSONPathEnvironmentOptions, FilterFunction } from "./path";
 
 export * as jsonpointer from "./pointer";

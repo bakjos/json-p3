@@ -6,11 +6,12 @@ import { JSONPathQuery } from "./path";
 export { JSONPathEnvironment } from "./environment";
 export type { JSONPathEnvironmentOptions } from "./environment";
 
-export { JSONPathSegment } from "./segments";
+export { JSONPathSegment, DescendantSegment, ChildSegment } from "./segments";
 export { JSONPathSelector } from "./selectors";
 export { JSONPathQuery } from "./path";
 export { JSONPathNodeList, JSONPathNode } from "./node";
-export { Token, TokenKind } from "./token";
+export { Token, TokenKind, TokenStream } from "./token";
+export { Parser } from "./parse";
 
 export * as selectors from "./selectors";
 export * as expressions from "./expression";
@@ -26,6 +27,7 @@ export {
   JSONPathSyntaxError,
   JSONPathTypeError,
   JSONPathRecursionLimitError,
+  UndefinedFilterFunctionError,
 } from "./errors";
 
 export { Nothing, KEY_MARK } from "./types";

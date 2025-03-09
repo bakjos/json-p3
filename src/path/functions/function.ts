@@ -23,6 +23,11 @@ export interface FilterFunction {
   returnType: FunctionExpressionType;
 
   /**
+   * The optional types (asumed to be at the end) of the filter function.
+   */
+  optionalTypes?: FunctionExpressionType[];
+
+  /**
    * A function with unknown number and type of arguments.
    */
   call(...args: unknown[]): unknown;

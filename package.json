@@ -1,6 +1,6 @@
 {
-  "name": "json-p3",
-  "version": "2.2.1",
+  "name": "@commure/json-p3",
+  "version": "2.2.7",
   "author": "James Prior",
   "license": "MIT",
   "description": "JSONPath, JSON Pointer and JSON Patch",
